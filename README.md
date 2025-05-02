@@ -1,50 +1,50 @@
 Instrukce na použití : Používej myš a horní ovládací prvky k výběru nástrojů a kreslení.
 Funkce
-Kreslení čáry, obdélníku a elipsy
+    Kreslení čáry, obdélníku a elipsy
 
-Nástroj „Guma“ (Eraser)
+    Nástroj „Guma“ (Eraser)
 
-Nástroj „Výplň“ (Fill) na tu jsem použil algoritmus flood fill
+    Nástroj „Výplň“ (Fill) na tu jsem použil algoritmus flood fill
 
 Možnost volby:
 
-Barvy
+    Barvy
 
-Stylu čáry (plná, čárkovaná, tečkovaná)
+    Stylu čáry (plná, čárkovaná, tečkovaná)
 
-Tloušťky čáry
+    Tloušťky čáry
 
 Ovládání
-Levé tlačítko myši: klikni a táhni pro kreslení tvarů
+    Levé tlačítko myši: klikni a táhni pro kreslení tvarů
 
-Výběr nástroje: horní rozbalovací seznam (ComboBox)
+    Výběr nástroje: horní rozbalovací seznam (ComboBox)
 
-Změna barvy: kliknutím na tlačítko „Barva“
+    Změna barvy: kliknutím na tlačítko „Barva“
 
-Styl čáry: rozbalovací seznam „Styl“
+    Styl čáry: rozbalovací seznam „Styl“
 
-Tloušťka čáry: číselník vedle stylu čáry
+    Tloušťka čáry: číselník vedle stylu čáry
 
 Struktura kódu
-Třída MainForm
-Hlavní okno aplikace
+  Třída MainForm
+  Hlavní okno aplikace
 
-Obsahuje obsluhu událostí myši (MouseDown, MouseMove, MouseUp)
+      Obsahuje obsluhu událostí myši (MouseDown, MouseMove, MouseUp)
 
-Obsahuje kreslení pomocí Paint události
-
-Obsahuje metodu InitializeUI() pro vytvoření ovládacích prvků
+      Obsahuje kreslení pomocí Paint události
+  
+      Obsahuje metodu InitializeUI() pro vytvoření ovládacích prvků
 
 Abstraktní třída Shape
-Slouží jako základ pro kreslitelné objekty
+      Slouží jako základ pro kreslitelné objekty
 
-Uchovává počáteční a koncový bod, barvu, tloušťku a styl čáry
+    Uchovává počáteční a koncový bod, barvu, tloušťku a styl čáry
 
-Obsahuje abstraktní metodu Draw(Graphics g)
+    Obsahuje abstraktní metodu Draw(Graphics g)
 
 Potomci třídy Shape
-LineShape – kreslí čáru
+            LineShape – kreslí čáru
 
-RectangleShape – kreslí obdélník
+            RectangleShape – kreslí obdélník
 
-EllipseShape – kreslí elipsu
+            EllipseShape – kreslí elipsu
